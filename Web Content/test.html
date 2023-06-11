@@ -1,0 +1,133 @@
+<!-- THIS IS A COMMENT
+    Basics:
+        1) Tag: <>
+        2) Tagename: What is placed between <>. If it is /tagname it indicates an ending tag.
+        3) Element: A peice of the file: <tagname> CONTENT </tagname>.
+        4) Attribute: <tagname id = "description"> 
+-->
+
+<!DOCTYPE html> <!--helps browsers recognize it as a HTML page.-->
+<html>          <!--Indicates the start of the HTML code--> 
+    <head>      <!--Things like title and other meta data that cannot be seen-->
+        <meta charset="UTF-8">  <!--NO ENDING TAG--> <!-- Meta tags are used for configuring the webpage-->
+        <meta name="description" content="HTML Tutorial for beginers"> <!--Helps Search engines find and rank your web-page-->
+        <meta name="veiwport" content="width=device-width, initial-scale=1.0"> <!--Controls the sze of the webpage based on the evice being used-->
+        <meta name="keywords" content="HTML, HTML5, CSS, Python, Javascript."> <!-- -->
+        <meta name="author" content="Manda Kausthubh">
+        <meta name="robot" content="index,follow">  <!-- Shows a Search engine what it can do on the webpage-->
+        <meta http-equiv="refresh" content="130">   <!-- Reloads the webpage after 130 seconds-->
+        <title>PROJECT TITLE</title> <!--Title of the web page-->
+        <!-- How to use <style> h1{font-size = 100px; color = blue;} body{color = yellow;} </style>
+                    (OR)<style> <link rel = "stylesheet" href = "CSS-FILE NAME"> </style>
+                    (OR)<style> body{background-image: url(); background: no-repeat;} </style>
+        -->
+    </head>
+    
+    <body>      <!--Content of the page--> <!-- Use <body background = "img address"> to get a background image-->
+        <p>This shows a paragraph 1.</p> <!--Two Paragraphs are separated by two endls.-->
+        <p>This shows a paragraph 2.</p> <!-- Use <img> tag inside to insert image near the para graph and use (inside the styles attribute of <img>)-->
+        <p>This shows a paragraph 3.</p> <!-- float: right attribute to cahnge the location of the image w.r.t the para. -->
+        <p>This shows a paragraph 4.</p>
+        <p>To go to the next line we use <br> tag. This is similar to the endl or /n, in C++.</p>
+
+        <p><a href="FileTwo.html">FileTwo</a></p>
+
+        <h1 style="color: red;">This is a header of size 1.</h1>
+        <h2>This is a header of size 2.</h2>
+        <h3>This is a header of size 3.</h3> <!--Goes till h6.-->
+
+        <pre>     <!--This tag is for converting text as it is with endls, spaces, tabs, etc.-->
+            int main(void)
+            {
+                printf("THIS is C code.");
+                return 0;
+            }
+        </pre>
+
+        <table border = "1" style="width: 100%">
+            <caption>Hi this is a Caption</caption>
+            <tr>
+                <th>Name</th> <th>90%</th>
+            </tr>
+            <tr>
+                <td>Kausthubh</td> <td>90%</td>
+            </tr>
+            <tr>
+                <td>Pragnay</td> <td>90%</td>
+            </tr>
+            <tr>
+                <td>Renuka</td> <td>90%</td>
+            </tr>
+        </table>
+
+        <div id = "header">
+            <p>This paragraph is inside a division</p>
+            <p>This paragraph is the second paragraph inside the division in the web-page.</p>
+        </div>
+
+        <div id = "navigation">
+            <p>This paragraph is inside a division</p>
+            <p>This paragraph is the second paragraph inside the division in the web-page.</p>
+        </div>
+
+        <div id = "foot">
+            <p>This paragraph is inside a division</p>
+            <p>This paragraph is the second paragraph inside the division in the web-page.</p>
+        </div>
+
+        <!--Using LISTS IN HTML:
+            
+        -->
+
+        <!--Using class: h1.myclassname{color : blue;} and use <tagname class = "myclassname">. Ensure that you mention
+            the css file in the <style>
+        -->
+
+        <!--PRINTING IMAGES IN HTML5:
+            <img alt = "Description of the image" src = "file location" style = "width: 100px; height: 100px">
+        -->
+    
+        <!-- <a href = "url" target = "">Discription of the link</a> is a link tab.-->
+        <!-- <a href = "#key"> Link discription(can be an image) </a> gives an internal link to a position inside the website
+             itself where the tag mentions <tagname id = "key"> .-->
+
+        <!--
+            Other Tags include:
+                1) <b> bold
+                2) <i> italized
+                3) <em> emphasized text
+                4) <small> smaller text
+                5) <strong> important text
+                6) <sub> subscript.
+                7) <sup> superscript.
+                8) <ins> inserted text.
+                9) <del> deleted text (crossed out).
+                10) <mark> highlighted text.
+        -->
+
+        <!--
+            QUOTATION and citation elements:
+            <abbr title = "FULL FORM">: abbreviation, shows full form when we hover over the text.
+            <address>: address of the code(like in a letter).
+            <bdo>: bi directional overide.
+            <blockquote cite="another source's URL"> : when quoted from another source.
+            <cite>: citation element.
+            <q> a inline short quotation.
+        -->
+
+        <!--
+            Computer Code Elements:
+            1) <code>: programming code.
+            2) <kbd> : keyboard input (looks like taking input), but not actually taking input.
+            3) <samp> : Shows sample output from the program.
+            4) <var> : a mathematical variable.
+            5) <pre> : pre-formatted text.
+            
+        --> 
+
+    </body>
+</html>
+
+
+
+<!--What is a div element??: Element used to contain other HTML elements.-->
